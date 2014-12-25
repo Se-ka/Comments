@@ -80,9 +80,7 @@ var addCommentsToBuffer = function (dat) {// объявление функции
     }
     showButtonShowMoreComments();
 };
-// //
-// //
-// //
+
 
 var messageError = function () { // объявление функ. при помощи перемен. "messageError"
 
@@ -255,9 +253,6 @@ var resetComments = function() { // определение функции при
     $("#comments").empty(); // jQuery-функция: метод "empty" удаляет контент(все дочерние блоки) в тэге с id"comments"
 };
 
-// //
-// //
-// //
 // Object {author: undefined, time: undefined, text: undefined, id: "error"}
 //Object {author: undefined, time: undefined, text: undefined, id: "reason"}
 //
