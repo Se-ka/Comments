@@ -253,8 +253,6 @@ var resetComments = function() { // определение функции при
     $("#comments").empty(); // jQuery-функция: метод "empty" удаляет контент(все дочерние блоки) в тэге с id"comments"
 };
 
-//при рефреш коментс кнопка добавления коментов сама то появляется, то исчезает, без моего вмешательства
-//от сервака приходят такие сообщухи и код реагирует на них, как на родные - сцуко!
 //Object {author: undefined, time: undefined, text: undefined, id: "error"}
 //Object {author: undefined, time: undefined, text: undefined, id: "reason"}
 //
