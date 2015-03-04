@@ -199,12 +199,12 @@ var renderOneComment = function (comment) {
         // = // "div", при помощи которого будем обращаться к тэгу с айдишником "comments"
         div = document.getElementById('comments');
 
-    div1.className = 'commentBlock';// тэгу "div1" добавим класс 'commentBlock'
+    div1.className = 'commentBlock color';// тэгу "div1" добавим класс 'commentBlock'
     div1.id = 'commentId' + comment.id;// = // id 'commentId'
-    div4.className ='commentAuthor';// тэгу "div4" добавим класс 'commentAuthor'
-    div5.className ='commentData';// = //
-    div2.className ='commentText';// = //
-    div3.className ='answer';// = //
+    div4.className ='commentAuthor color';// тэгу "div4" добавим класс 'commentAuthor'
+    div5.className ='commentData color';// = //
+    div2.className ='commentText color';// = //
+    div3.className ='answer color';// = //
 
     div4.innerHTML = '<strong>Author: </strong>' + comment.author;// в "div4" добавим HTML-код
     div5.innerHTML = '<strong> Date: </strong>' + moment.unix(comment.time).format("hh:mm:ss a, dddd, Do MMMM, YYYY");// = //

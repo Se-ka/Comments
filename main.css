@@ -1,5 +1,5 @@
 body {
-    background-color: dimgrey;
+    background-color: #222222;
 }
 
 h1 {
@@ -9,18 +9,24 @@ h1 {
 .enterComment{
     width: 430px;
     height: 195px;
-    border: 1px solid #ffffff;
+    border: 1px solid lawngreen;
     border-radius: 10px;
     padding-top: 5px;
 }
 
 .authorName {
     padding-left: 14px;
-    border-radius: 10px;
+    /*color: darkseagreen;
+    border-radius: 10px;*/
 }
 
+.color {
+    color: darkseagreen;
+}
+
+
 .correct.error { /*этот класс применяется при наличии ошибок*/
-    color:darkred;
+    color:indianred;
     padding-left: 14px;
 }
 
@@ -67,7 +73,7 @@ h1 {
 .comment.container {
 
     width: 420px;
-    border: 1px solid #ffffff;
+    border: 1px solid lawngreen;
     border-radius: 10px;
     padding-bottom: 1px;
     padding-left: 5px;
@@ -85,7 +91,7 @@ h1 {
     margin-top: 10px;
     margin-left: 2px;
     width: 408px;
-    border: 1px solid #808080;
+    border: 1px solid;
     border-radius: 5px;
     padding-left: 5px;
 }
@@ -100,7 +106,7 @@ h1 {
 }
 
 .commentText{
-    border-top: 1px solid #000000;
+    border-top: 1px solid deeppink;
     margin-top: 5px;
     padding-top: 5px;
     width: 401px;
