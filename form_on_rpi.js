@@ -1,5 +1,6 @@
-var //server = 'http://comments.localnet/comments.php', //serverOnMyLaptop
-    server = 'http://rasp.localnet/comments/comments.php'; //serverOnRaspberryPI
+//server = 'http://comments.localnet/comments.php', //serverOnMyLaptop
+    server = 'http://rasp.localnet/comments/comments.php',
+    number = 0; //serverOnRaspberryPI
 
 
 var redyfunction = function () { // определение функции при помощи переменной "redyfunction"
@@ -190,8 +191,9 @@ var renderNextTenComments = function() {
 // объявление функ. при помощи перемен. "renderOneComment" с параментром котрый принимает на вход аргумент
 var renderOneComment = function (comment) {
     console.log(comment);// команда для вывода на консоль 'comment'
-
-    var div1 = document.createElement('div'),// создаём переменную "div1", в которую ложим новый элемент - тэг "div"
+    number++;
+    var div0 = document.createElement('div'),
+        div1 = document.createElement('div'),// создаём переменную "div1", в которую ложим новый элемент - тэг "div"
         div4 = document.createElement('div'),// = // "div4" // = //
         div5 = document.createElement('div'),// = // "div5" // = //
         div2 = document.createElement('div'),// = // "div2" // = //
@@ -199,18 +201,21 @@ var renderOneComment = function (comment) {
         // = // "div", при помощи которого будем обращаться к тэгу с айдишником "comments"
         div = document.getElementById('comments');
 
+    div0.className = 'commentAuthor';
     div1.className = 'commentBlock color';// тэгу "div1" добавим класс 'commentBlock'
     div1.id = 'commentId' + comment.id;// = // id 'commentId'
-    div4.className ='commentAuthor color';// тэгу "div4" добавим класс 'commentAuthor'
-    div5.className ='commentData color';// = //
-    div2.className ='commentText color';// = //
-    div3.className ='answer color';// = //
+    div4.className ='commentAuthor';// тэгу "div4" добавим класс 'commentAuthor'
+    div5.className ='commentData';// = //
+    div2.className ='commentText';// = //
+    div3.className ='answer';// = //
 
+    div0.innerHTML = '№ ' + number;
     div4.innerHTML = '<strong>Author: </strong>' + comment.author;// в "div4" добавим HTML-код
     div5.innerHTML = '<strong> Date: </strong>' + moment.unix(comment.time).format("hh:mm:ss a, dddd, Do MMMM, YYYY");// = //
     div2.innerHTML = comment.text;// = //
     div3.innerHTML= 'Answer';// = //
 
+    div1.appendChild(div0);
     div1.appendChild(div4);// поместим в "div1" "div4"
     div1.appendChild(div5);// = //
     div1.appendChild(div2);// = //
