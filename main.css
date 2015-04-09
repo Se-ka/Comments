@@ -16,8 +16,6 @@ h1 {
 
 .authorName {
     padding-left: 14px;
-    /*color: darkseagreen;
-    border-radius: 10px;*/
 }
 
 .color {
@@ -50,11 +48,9 @@ h1 {
     cursor: pointer;
     margin-left: 12px;
     border-radius: 5px;
-
 }
 
 .hidden {
-    /*display: none;*/
     visibility: hidden;
 }
 
@@ -78,12 +74,6 @@ h1 {
     padding-bottom: 1px;
     padding-left: 5px;
     padding-right: 5px;
-
-
-    /*  background: darkgreen; /* Цвет фона */
-    /*outline: 1px solid #000; /* Чёрная рамка */
-    /*border: 3px solid #fff; /* Белая рамка */
-    /*  border-radius: 10px; /* Радиус скругления */
 }
 
 .commentBlock {
